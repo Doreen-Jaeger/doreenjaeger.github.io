@@ -62,24 +62,24 @@ main {
 .hero h1 {
     font-size: clamp(42px, 6vw, 64px);
     font-weight: 500;
-    margin-bottom: 15px; /* bleibt unverändert */
+    margin-bottom: 15px; /* bleibt exakt */
 }
 
-/* 🔽 Subline nach unten verschoben */
+/* 🔽 deutlich weiter nach unten verschoben */
 
 .subline {
     font-size: clamp(16px, 2.2vw, 22px);
     line-height: 1.6;
-    margin: 25px auto 35px; /* vorher kleiner */
+    margin: 60px auto 50px;
     max-width: 600px;
 }
 
-/* 🔽 Divider ebenfalls nach unten */
+/* 🔽 Linie weiter nach unten */
 
 .divider {
     width: 80%;
     height: 2px;
-    margin: 35px auto 45px;
+    margin: 50px auto 60px;
     background: linear-gradient(
         to right,
         transparent 0%,
@@ -89,12 +89,12 @@ main {
     );
 }
 
-/* 🔽 Bild leicht weiter nach unten */
+/* 🔽 Bild ebenfalls weiter nach unten */
 
 .profilbild {
     width: clamp(220px, 38vw, 420px);
     border-radius: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 /* ========================= */
@@ -145,12 +145,12 @@ footer a:hover {
 
     .subline {
         font-size: 15px;
-        margin: 20px auto 25px;
+        margin: 40px auto 35px;
     }
 
     .divider {
         width: 90%;
-        margin: 25px auto 30px;
+        margin: 35px auto 40px;
     }
 
     .profilbild {
