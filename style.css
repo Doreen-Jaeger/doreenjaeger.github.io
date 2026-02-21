@@ -1,18 +1,18 @@
-/* ============================= */
+/* ========================= */
 /* BASIS */
-/* ============================= */
+/* ========================= */
 
 body {
     margin: 0;
-    font-family: 'Georgia', serif;
+    font-family: Georgia, serif;
     background-color: #d8d0c3;
     color: #6e5448;
     text-align: center;
 }
 
-/* ============================= */
+/* ========================= */
 /* NAVIGATION */
-/* ============================= */
+/* ========================= */
 
 .navigation {
     padding: 25px 10px;
@@ -30,9 +30,9 @@ body {
     opacity: 0.7;
 }
 
-/* ============================= */
-/* HERO BEREICH */
-/* ============================= */
+/* ========================= */
+/* HERO */
+/* ========================= */
 
 .hero {
     padding: 60px 20px 40px 20px;
@@ -51,17 +51,13 @@ body {
     line-height: 1.6;
 }
 
-/* Linie wie im Screenshot */
-
 .hero-divider {
-    width: 70%;
+    width: 65%;
     height: 2px;
-    margin: 40px auto 40px auto;
+    margin: 40px auto;
     background-color: #6e5448;
     opacity: 0.4;
 }
-
-/* Bild */
 
 .hero-image img {
     width: 65%;
@@ -69,9 +65,9 @@ body {
     border-radius: 25px;
 }
 
-/* ============================= */
+/* ========================= */
 /* FOOTER */
-/* ============================= */
+/* ========================= */
 
 footer {
     margin-top: 50px;
