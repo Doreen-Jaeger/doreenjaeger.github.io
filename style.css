@@ -1,7 +1,4 @@
-/* ============================= */
 /* RESET */
-/* ============================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +16,7 @@ body {
     text-align: center;
 }
 
-/* ============================= */
 /* HEADER */
-/* ============================= */
 
 header {
     padding: 14px 0 10px 0;
@@ -46,9 +41,7 @@ header {
     opacity: 0.6;
 }
 
-/* ============================= */
-/* STARTSEITE FEST */
-/* ============================= */
+/* STARTSEITE */
 
 .home {
     display: flex;
@@ -61,42 +54,31 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.home-hero {
+    max-width: 650px;
     padding: 10px 20px;
 }
 
-.home .hero {
-    width: 100%;
-    max-width: 650px;
-}
-
-.home h1 {
+.home-hero h1 {
     font-size: clamp(28px, 5vw, 42px);
     margin-bottom: 12px;
 }
 
-.home .subline {
+.subline {
     font-size: clamp(16px, 3.5vw, 20px);
     line-height: 1.5;
-    margin: 0 auto 15px auto;
+    margin-bottom: 15px;
 }
 
-.home .divider {
-    height: 1px;
-    width: 180px;
-    margin: 12px auto 20px auto;
-    background: linear-gradient(to right, transparent, rgba(92,74,63,0.4), transparent);
-}
-
-.home .hero img {
+.home-hero img {
     width: clamp(160px, 35vw, 240px);
     border-radius: 40px;
-    display: block;
-    margin: 0 auto;
+    margin-top: 20px;
 }
 
-/* ============================= */
 /* NORMALE SEITEN */
-/* ============================= */
 
 main {
     padding: 60px 20px;
@@ -109,14 +91,28 @@ h1 {
 
 .divider {
     height: 1px;
-    width: 220px;
-    margin: 25px auto 35px auto;
+    width: 200px;
+    margin: 20px auto 30px auto;
     background: linear-gradient(to right, transparent, rgba(92,74,63,0.4), transparent);
 }
 
-/* ============================= */
+/* ÜBER MICH */
+
+.about-image img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.about-text {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
 /* FOOTER */
-/* ============================= */
 
 footer {
     padding: 18px 0;
