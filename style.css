@@ -1,5 +1,5 @@
 /* ========================= */
-/* GRUNDLAYOUT */
+/* BASIS – NICHT VERÄNDERN */
 /* ========================= */
 
 * {
@@ -10,11 +10,10 @@ body {
     margin: 0;
     background-color: #d8d1c6;
     color: #6b4f45;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;  /* deine finale Schrift */
     display: flex;
     flex-direction: column;
-    height: 100vh;              /* volle Bildschirmhöhe */
-    overflow: hidden;           /* kein Scrollen */
+    min-height: 100vh;
 }
 
 /* ========================= */
@@ -26,20 +25,20 @@ header {
 }
 
 .navigation {
-    padding: 18px 10px;         /* etwas kompakter */
+    padding: 20px 10px;   /* leicht kompakter */
     text-align: center;
 }
 
 .navigation a {
     text-decoration: none;
     color: #6b4f45;
-    margin: 0 12px;
+    margin: 0 14px;
     font-size: 15px;
     font-weight: 400;
 }
 
 /* ========================= */
-/* HERO */
+/* HERO – VOLLE HÖHE */
 /* ========================= */
 
 main {
@@ -51,7 +50,7 @@ main {
 
 .hero {
     text-align: center;
-    padding: 10px 20px;
+    padding: 20px;
     width: 100%;
     max-width: 900px;
 }
@@ -59,13 +58,13 @@ main {
 .hero h1 {
     font-size: clamp(42px, 6vw, 64px);
     font-weight: 500;
-    margin: 10px 0 15px;        /* enger */
+    margin-bottom: 18px;
 }
 
 .subline {
     font-size: clamp(16px, 2.2vw, 22px);
-    line-height: 1.5;
-    margin: 0 auto 20px;        /* enger */
+    line-height: 1.6;
+    margin: 0 auto 25px;
     max-width: 600px;
 }
 
@@ -73,22 +72,22 @@ main {
     width: 60%;
     height: 2px;
     background-color: #c9c1b6;
-    margin: 20px auto 25px;     /* enger */
+    margin: 25px auto 30px;
 }
 
 .profilbild {
-    width: clamp(200px, 35vw, 380px);   /* leicht kleiner */
+    width: clamp(220px, 38vw, 420px);
     border-radius: 30px;
 }
 
 /* ========================= */
-/* FOOTER */
+/* FOOTER – WIEDER SICHTBAR */
 /* ========================= */
 
 footer {
     border-top: 1px solid rgba(0,0,0,0.08);
     text-align: center;
-    padding: 15px;
+    padding: 18px;
     font-size: 14px;
     color: #7a665c;
 }
