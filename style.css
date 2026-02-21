@@ -21,12 +21,20 @@ header {
 
 .main-nav {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 18px;
+    justify-content: flex-start;
+    gap: 25px;
+    overflow-x: auto;        /* wichtig */
+    white-space: nowrap;     /* wichtig */
+    padding: 0 20px;
+    scrollbar-width: none;   /* Firefox */
+}
+
+.main-nav::-webkit-scrollbar {
+    display: none;           /* Chrome / Safari */
 }
 
 .main-nav a {
+    flex: 0 0 auto;          /* verhindert Umbruch */
     text-decoration: none;
     color: #7a5a4f;
     font-size: 16px;
@@ -73,10 +81,6 @@ img {
     border-radius: 30px;
     margin-top: 40px;
 }
-
-/* ============================= */
-/* FOOTER */
-/* ============================= */
 
 footer {
     margin-top: 80px;
