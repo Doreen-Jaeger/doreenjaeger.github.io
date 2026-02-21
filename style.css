@@ -1,52 +1,73 @@
+/* ============================= */
+/* Grundlayout */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #d8cfc2;
+    color: #7a5a4f;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 40px 20px;
+/* ============================= */
+/* Container */
+/* ============================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
-section {
-    padding: 40px 20px;
+/* ============================= */
+/* Hero Bereich */
+/* ============================= */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
 }
 
-h1 {
-    margin: 0;
-    font-size: 40px;
+.hero-text {
+    flex: 1;
+    min-width: 280px;
 }
 
-h2 {
-    color: #2c3e50;
+.hero-text h1 {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.hero-text p {
+    font-size: 20px;
+    max-width: 500px;
 }
 
-a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    background-color: #3498db;
-    color: white;
+.hero img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+/* ============================= */
+/* Navigation */
+/* ============================= */
+
+nav {
+    margin-top: 40px;
+}
+
+nav a {
     text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-a:hover {
-    background-color: #2980b9;
-}
-
-footer {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
-}
+    color: #7a5a4f;
