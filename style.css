@@ -61,28 +61,21 @@ header {
 }
 
 /* =============================== */
-/* STARTSEITE (Index bleibt zentriert) */
+/* MAIN */
 /* =============================== */
 
-body.home main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* =============================== */
-/* UNTERSEITEN */
-/* =============================== */
-
-body.subpage main {
+main {
     flex: 1;
     display: flex;
     justify-content: center;
-    padding-top: 80px; /* 🔥 feste Höhe für alle Überschriften */
+    padding-top: 70px; /* gleiche Höhe für alle Seiten */
 }
 
-body.subpage .hero {
+/* =============================== */
+/* HERO */
+/* =============================== */
+
+.hero {
     width: 90%;
     max-width: 1100px;
     display: flex;
@@ -101,7 +94,7 @@ body.subpage .hero {
 }
 
 /* =============================== */
-/* DURCHGEZOGENE LINIE */
+/* LINIE */
 /* =============================== */
 
 .hero-divider {
@@ -109,6 +102,22 @@ body.subpage .hero {
     height: 2px;
     background-color: #6e4f46;
     opacity: 0.4;
+}
+
+/* =============================== */
+/* STARTSEITE SPEZIAL */
+/* =============================== */
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 30px;
+    box-shadow: 0 20px 55px rgba(0,0,0,0.12);
 }
 
 /* =============================== */
@@ -129,8 +138,8 @@ footer {
 
 @media (max-width: 900px) {
 
-    body.subpage main {
-        padding-top: 60px;
+    main {
+        padding-top: 50px;
     }
 
     .hero-text h1 {
@@ -139,5 +148,9 @@ footer {
 
     .hero-subline {
         font-size: 18px;
+    }
+
+    .hero-image img {
+        max-width: 300px;
     }
 }
