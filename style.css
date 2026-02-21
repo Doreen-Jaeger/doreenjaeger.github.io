@@ -25,7 +25,8 @@ max-width: 700px;
 /* ===== Navigation ===== */
 
 header {
-padding: 25px 0 15px 0;
+padding: 25px 0 20px 0;
+border-bottom: 1px solid rgba(92, 74, 63, 0.15);
 }
 
 .navigation {
