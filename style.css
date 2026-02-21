@@ -1,146 +1,152 @@
-/* ===== Reset ===== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ===== Basis ===== */
 
 body {
-    font-family: 'DM Sans', sans-serif;
-    background-color: #cfc6bb;
-    color: #5a463c;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+margin: 0;
+font-family: 'DM Sans', sans-serif;
+background-color: #c9c0b4;
+color: #5c4a3f;
+text-align: center;
+}
+
+h1 {
+font-size: 48px;
+font-weight: 400;
+margin-top: 80px;
+margin-bottom: 30px;
+}
+
+p {
+font-size: 20px;
+line-height: 1.6;
+margin: 0 auto 20px auto;
+max-width: 700px;
 }
 
 /* ===== Navigation ===== */
 
 header {
-    padding: 20px 0;
+padding: 25px 0 15px 0;
 }
 
 .navigation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 28px;
-    font-size: 18px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+max-width: 1100px;
+margin: 0 auto;
 }
 
 .navigation a {
-    text-decoration: none;
-    color: #5a463c;
+text-decoration: none;
+color: #5c4a3f;
+font-size: 18px;
+font-weight: 400;
 }
 
 .navigation a:hover {
-    opacity: 0.7;
+opacity: 0.7;
 }
 
-/* ===== Main ===== */
-
-main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* ===== Hero Bereich ===== */
 
 .hero {
-    max-width: 900px;
-    padding: 0 40px;
+padding-bottom: 80px;
 }
 
-/* ===== Überschrift ===== */
-
-h1 {
-    font-size: 56px;
-    font-weight: 400;
-    margin-bottom: 40px;
+.subline {
+font-size: 22px;
+margin-top: 10px;
+margin-bottom: 40px;
 }
 
-/* ===== Divider ===== */
+/* ===== Divider mit Verlauf ===== */
 
 .divider {
-    height: 2px;
-    width: 60%;
-    margin: 60px auto;
-    background: linear-gradient(
-        to right,
-        rgba(90,70,60,0),
-        rgba(90,70,60,0.6),
-        rgba(90,70,60,0)
-    );
+width: 420px;
+height: 2px;
+margin: 40px auto;
+background: linear-gradient(
+to right,
+transparent,
+#5c4a3f,
+transparent
+);
+opacity: 0.5;
 }
 
-/* ===== Startseite Bild ===== */
+/* ===== Profilbild Startseite ===== */
 
-.profilbild {
-    width: 320px;
-    max-width: 90%;
-    border-radius: 40px;
-    display: block;
-    margin: 0 auto;
+.hero img {
+width: 320px;
+max-width: 90%;
+border-radius: 40px;
+display: block;
+margin: 0 auto;
 }
 
 /* ===== Über mich Layout ===== */
 
 .about-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    margin-top: 40px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 40px;
 }
 
 .about-image img {
-    width: 95px;        /* 👈 neue Premium-Größe */
-    height: 95px;
-    object-fit: cover;
-    border-radius: 50%;
+width: 95px;
+height: 95px;
+object-fit: cover;
+border-radius: 50%;
+box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+margin-bottom: 30px;
 }
 
 .about-text {
-    max-width: 600px;
-    text-align: left;
-    font-size: 18px;
-    line-height: 1.7;
+max-width: 600px;
+text-align: center;
+font-size: 18px;
+line-height: 1.7;
 }
 
 /* ===== Footer ===== */
 
 footer {
-    padding: 25px 0;
-    font-size: 16px;
+padding: 25px 0;
+font-size: 16px;
+border-top: 1px solid rgba(92, 74, 63, 0.2);
+margin-top: 80px;
 }
 
 /* ===== Responsive ===== */
 
 @media (max-width: 768px) {
 
-    h1 {
-        font-size: 42px;
-    }
+h1 {
+font-size: 38px;
+margin-top: 60px;
+}
 
-    .navigation {
-        gap: 18px;
-        font-size: 16px;
-    }
+.navigation {
+gap: 18px;
+}
 
-    .hero {
-        padding: 0 25px;
-    }
+.subline {
+font-size: 20px;
+}
 
-    .about-wrapper {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.hero img {
+width: 250px;
+}
 
-    .about-text {
-        text-align: center;
-    }
+.about-image img {
+width: 85px;
+height: 85px;
+}
+
+.divider {
+width: 280px;
+}
 
 }
