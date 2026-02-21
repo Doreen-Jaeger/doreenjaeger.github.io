@@ -1,8 +1,15 @@
-/* ===== Basis ===== */
+/* ============================= */
+/* RESET */
+/* ============================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
 }
 
 body {
@@ -12,9 +19,12 @@ body {
     text-align: center;
 }
 
-/* ===== Header ===== */
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
 header {
-    padding: 15px 0 10px 0;
+    padding: 14px 0 10px 0;
     border-bottom: 1px solid rgba(92,74,63,0.25);
 }
 
@@ -22,8 +32,8 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 18px;
-    font-size: 17px;
+    gap: 16px;
+    font-size: 16px;
 }
 
 .navigation a {
@@ -36,68 +46,80 @@ header {
     opacity: 0.6;
 }
 
-/* ===== Hero ===== */
-.hero {
-    padding: 30px 20px 20px 20px;
+/* ============================= */
+/* STARTSEITE FEST */
+/* ============================= */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
 }
 
-h1 {
-    font-size: 42px;
-    font-weight: 500;
-    margin-bottom: 15px;
+.home main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
 }
 
-.subline {
-    font-size: 20px;
+.home .hero {
+    width: 100%;
+    max-width: 650px;
+}
+
+.home h1 {
+    font-size: clamp(28px, 5vw, 42px);
+    margin-bottom: 12px;
+}
+
+.home .subline {
+    font-size: clamp(16px, 3.5vw, 20px);
     line-height: 1.5;
-    max-width: 550px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 15px auto;
 }
 
-.divider {
+.home .divider {
     height: 1px;
-    width: 200px;
-    margin: 15px auto 25px auto;
+    width: 180px;
+    margin: 12px auto 20px auto;
     background: linear-gradient(to right, transparent, rgba(92,74,63,0.4), transparent);
 }
 
-.hero img {
-    width: 240px;   /* vorher größer */
-    max-width: 85%;
+.home .hero img {
+    width: clamp(160px, 35vw, 240px);
     border-radius: 40px;
     display: block;
     margin: 0 auto;
 }
 
-/* ===== Footer ===== */
-footer {
-    margin-top: 30px;
-    padding: 20px 0;
-    border-top: 1px solid rgba(92,74,63,0.25);
-    font-size: 15px;
+/* ============================= */
+/* NORMALE SEITEN */
+/* ============================= */
+
+main {
+    padding: 60px 20px;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
 
-    header {
-        padding: 12px 0 8px 0;
-    }
+.divider {
+    height: 1px;
+    width: 220px;
+    margin: 25px auto 35px auto;
+    background: linear-gradient(to right, transparent, rgba(92,74,63,0.4), transparent);
+}
 
-    .navigation {
-        font-size: 15px;
-        gap: 14px;
-    }
+/* ============================= */
+/* FOOTER */
+/* ============================= */
 
-    h1 {
-        font-size: 34px;
-    }
-
-    .subline {
-        font-size: 18px;
-    }
-
-    .hero img {
-        width: 210px;
-    }
+footer {
+    padding: 18px 0;
+    border-top: 1px solid rgba(92,74,63,0.25);
+    font-size: 14px;
 }
