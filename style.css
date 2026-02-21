@@ -33,14 +33,13 @@ header {
 .navigation a {
     text-decoration: none;
     color: #5a463c;
-    font-weight: 400;
 }
 
 .navigation a:hover {
     opacity: 0.7;
 }
 
-/* ===== Main Bereich ===== */
+/* ===== Main ===== */
 
 main {
     flex: 1;
@@ -59,23 +58,15 @@ main {
 h1 {
     font-size: 56px;
     font-weight: 400;
-    margin-bottom: 35px;
-}
-
-/* ===== Subline ===== */
-
-.subline {
-    font-size: 22px;
-    line-height: 1.6;
     margin-bottom: 40px;
 }
 
-/* ===== Divider mit Verlauf ===== */
+/* ===== Divider ===== */
 
 .divider {
     height: 2px;
     width: 60%;
-    margin: 45px auto;
+    margin: 60px auto;
     background: linear-gradient(
         to right,
         rgba(90,70,60,0),
@@ -84,7 +75,7 @@ h1 {
     );
 }
 
-/* ===== Großes Profilbild (Startseite) ===== */
+/* ===== Startseite Bild ===== */
 
 .profilbild {
     width: 320px;
@@ -98,23 +89,22 @@ h1 {
 
 .about-wrapper {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
+    align-items: flex-start;
     gap: 40px;
     margin-top: 40px;
-    text-align: left;
 }
 
-.mini-bild {
+.about-image img {
     width: 140px;
     height: 140px;
     object-fit: cover;
     border-radius: 50%;
-    flex-shrink: 0;
 }
 
 .about-text {
     max-width: 600px;
+    text-align: left;
     font-size: 18px;
     line-height: 1.7;
 }
@@ -132,10 +122,6 @@ footer {
 
     h1 {
         font-size: 42px;
-    }
-
-    .subline {
-        font-size: 18px;
     }
 
     .navigation {
