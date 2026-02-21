@@ -1,5 +1,5 @@
 /* ========================= */
-/* BASIS – NICHT VERÄNDERN */
+/* BASIS */
 /* ========================= */
 
 * {
@@ -10,7 +10,7 @@ body {
     margin: 0;
     background-color: #d8d1c6;
     color: #6b4f45;
-    font-family: 'DM Sans', sans-serif;  /* deine finale Schrift */
+    font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -25,7 +25,7 @@ header {
 }
 
 .navigation {
-    padding: 20px 10px;   /* leicht kompakter */
+    padding: 20px 10px;
     text-align: center;
 }
 
@@ -38,7 +38,7 @@ header {
 }
 
 /* ========================= */
-/* HERO – VOLLE HÖHE */
+/* HERO */
 /* ========================= */
 
 main {
@@ -81,7 +81,7 @@ main {
 }
 
 /* ========================= */
-/* FOOTER – WIEDER SICHTBAR */
+/* FOOTER */
 /* ========================= */
 
 footer {
@@ -90,4 +90,53 @@ footer {
     padding: 18px;
     font-size: 14px;
     color: #7a665c;
+}
+
+/* ========================= */
+/* MOBILE OPTIMIERUNG */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        height: 100vh;
+        overflow: hidden; /* verhindert Scrollen */
+    }
+
+    .navigation {
+        padding: 12px 5px;
+    }
+
+    .navigation a {
+        display: inline-block;
+        margin: 4px 8px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 10px 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .subline {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .divider {
+        margin: 15px auto 20px;
+    }
+
+    .profilbild {
+        width: 240px;
+    }
+
+    footer {
+        padding: 12px;
+        font-size: 12px;
+    }
 }
