@@ -1,12 +1,12 @@
-/* ========================= */
+    /* ========================= */
 /* BASIS */
 /* ========================= */
 
 body {
     margin: 0;
-    font-family: Georgia, serif;
-    background-color: #d8d0c3;
-    color: #6e5448;
+    background-color: #d6cfc3; /* exakter Canva-Beige Ton */
+    color: #6b5146;
+    font-family: 'Inter', sans-serif;
     text-align: center;
 }
 
@@ -15,19 +15,21 @@ body {
 /* ========================= */
 
 .navigation {
-    padding: 25px 10px;
-    border-bottom: 1px solid rgba(110,84,72,0.2);
+    padding: 30px 10px 25px;
+    border-bottom: 1px solid rgba(107,81,70,0.15);
 }
 
 .navigation a {
     text-decoration: none;
-    color: #6e5448;
+    color: #6b5146;
     margin: 0 18px;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
 }
 
 .navigation a:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 /* ========================= */
@@ -35,34 +37,42 @@ body {
 /* ========================= */
 
 .hero {
-    padding: 60px 20px 40px 20px;
+    padding: 80px 20px 40px;
 }
 
 .hero h1 {
-    font-size: 48px;
-    font-weight: normal;
-    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
 .hero-subline {
-    font-size: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
     line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
 }
+
+/* Weicher eleganter Strich */
 
 .hero-divider {
-    width: 65%;
+    width: 75%;
     height: 2px;
-    margin: 40px auto;
-    background-color: #6e5448;
-    opacity: 0.4;
+    margin: 45px auto 50px;
+    background: linear-gradient(to right, transparent, #6b5146, transparent);
+    opacity: 0.5;
 }
 
+/* Bild größer & harmonisch */
+
 .hero-image img {
-    width: 65%;
-    max-width: 500px;
-    border-radius: 25px;
+    width: 70%;
+    max-width: 600px;
+    border-radius: 28px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* ========================= */
@@ -70,8 +80,10 @@ body {
 /* ========================= */
 
 footer {
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 70px;
+    padding: 25px;
     font-size: 14px;
-    border-top: 1px solid rgba(110,84,72,0.2);
+    font-family: 'Inter', sans-serif;
+    border-top: 1px solid rgba(107,81,70,0.15);
+    color: #7c665d;
 }
