@@ -1,7 +1,3 @@
-/* ========================= */
-/* BASIS */
-/* ========================= */
-
 * {
     box-sizing: border-box;
 }
@@ -35,6 +31,10 @@ header {
     margin: 0 14px;
     font-size: 15px;
     font-weight: 400;
+}
+
+.navigation a:hover {
+    opacity: 0.6;
 }
 
 /* ========================= */
@@ -92,15 +92,24 @@ footer {
     color: #7a665c;
 }
 
+footer a {
+    color: #6b4f45;
+    text-decoration: none;
+}
+
+footer a:hover {
+    opacity: 0.6;
+}
+
 /* ========================= */
-/* MOBILE OPTIMIERUNG */
+/* MOBILE */
 /* ========================= */
 
 @media (max-width: 600px) {
 
     body {
         height: 100vh;
-        overflow: hidden; /* verhindert Scrollen */
+        overflow: hidden;
     }
 
     .navigation {
