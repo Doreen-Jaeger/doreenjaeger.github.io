@@ -1,138 +1,125 @@
+/* ===== Basis Reset ===== */
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
 body {
-    background-color: #d8d1c6;
-    color: #6b4f45;
     font-family: 'DM Sans', sans-serif;
+    background-color: #cfc6bb;
+    color: #5a463c;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
+/* ===== Navigation ===== */
+
 header {
-    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding: 20px 0;
 }
 
 .navigation {
-    padding: 18px 10px;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    font-size: 18px;
 }
 
 .navigation a {
     text-decoration: none;
-    color: #6b4f45;
-    margin: 0 14px;
-    font-size: 15px;
+    color: #5a463c;
     font-weight: 400;
 }
 
 .navigation a:hover {
-    opacity: 0.6;
+    opacity: 0.7;
 }
+
+/* ===== Main Bereich ===== */
 
 main {
     flex: 1;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
-    padding-top: 40px;
+    align-items: center;
 }
 
 .hero {
-    text-align: center;
-    width: 100%;
     max-width: 900px;
     padding: 0 40px;
 }
 
-.hero h1 {
-    font-size: clamp(42px, 6vw, 64px);
-    font-weight: 500;
-    margin-bottom: 15px;
+/* ===== Überschrift ===== */
+
+h1 {
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 35px;
 }
+
+/* ===== Subline ===== */
 
 .subline {
-    font-size: clamp(16px, 2.2vw, 22px);
+    font-size: 22px;
     line-height: 1.6;
-    margin: 60px auto 50px;
-    max-width: 600px;
+    margin-bottom: 40px;
 }
 
+/* ===== Divider mit Verlauf ===== */
+
 .divider {
-    width: 80%;
     height: 2px;
-    margin: 50px auto 60px;
+    width: 60%;
+    margin: 0 auto 45px auto;
     background: linear-gradient(
         to right,
-        transparent 0%,
-        #6b4f45 15%,
-        #6b4f45 85%,
-        transparent 100%
+        rgba(90,70,60,0),
+        rgba(90,70,60,0.6),
+        rgba(90,70,60,0)
     );
 }
 
+/* ===== Profilbild ===== */
+
 .profilbild {
-    width: clamp(220px, 38vw, 420px);
-    border-radius: 30px;
-    margin-top: 20px;
+    width: 320px;
+    max-width: 90%;
+    border-radius: 40px;
+    display: block;
+    margin: 0 auto;
 }
+
+/* ===== Footer ===== */
 
 footer {
-    border-top: 1px solid rgba(0,0,0,0.08);
-    text-align: center;
-    padding: 14px;
-    font-size: 13px;
-    color: #7a665c;
+    padding: 25px 0;
+    font-size: 16px;
 }
 
-@media (max-width: 600px) {
+/* ===== Responsive ===== */
 
-    .navigation {
-        padding: 12px 5px;
-    }
+@media (max-width: 768px) {
 
-    .navigation a {
-        display: inline-block;
-        margin: 4px 8px;
-        font-size: 14px;
-    }
-
-    main {
-        padding-top: 25px;
-    }
-
-    .hero {
-        padding: 0 20px;
-    }
-
-    .hero h1 {
-        font-size: 34px;
-        margin-bottom: 10px;
+    h1 {
+        font-size: 42px;
     }
 
     .subline {
-        font-size: 15px;
-        margin: 40px auto 35px;
+        font-size: 18px;
     }
 
-    .divider {
-        width: 90%;
-        margin: 35px auto 40px;
+    .navigation {
+        gap: 18px;
+        font-size: 16px;
     }
 
-    .profilbild {
-        width: 220px;
+    .hero {
+        padding: 0 25px;
     }
 
-    footer {
-        padding: 10px;
-        font-size: 12px;
-    }
 }
