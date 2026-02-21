@@ -2,14 +2,18 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
     background-color: #d8d1c6;
     color: #6b4f45;
     font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 /* ========================= */
@@ -50,7 +54,7 @@ main {
 
 .hero {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
     max-width: 900px;
 }
@@ -58,13 +62,13 @@ main {
 .hero h1 {
     font-size: clamp(42px, 6vw, 64px);
     font-weight: 500;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .subline {
     font-size: clamp(16px, 2.2vw, 22px);
     line-height: 1.6;
-    margin: 0 auto 25px;
+    margin: 0 auto 20px;
     max-width: 600px;
 }
 
@@ -72,7 +76,7 @@ main {
     width: 60%;
     height: 2px;
     background-color: #c9c1b6;
-    margin: 25px auto 30px;
+    margin: 20px auto 25px;
 }
 
 .profilbild {
@@ -87,8 +91,8 @@ main {
 footer {
     border-top: 1px solid rgba(0,0,0,0.08);
     text-align: center;
-    padding: 18px;
-    font-size: 14px;
+    padding: 14px;
+    font-size: 13px;
     color: #7a665c;
 }
 
@@ -102,15 +106,10 @@ footer a:hover {
 }
 
 /* ========================= */
-/* MOBILE */
+/* MOBILE OPTIMIERUNG */
 /* ========================= */
 
 @media (max-width: 600px) {
-
-    body {
-        height: 100vh;
-        overflow: hidden;
-    }
 
     .navigation {
         padding: 12px 5px;
@@ -122,12 +121,8 @@ footer a:hover {
         font-size: 14px;
     }
 
-    .hero {
-        padding: 10px 15px;
-    }
-
     .hero h1 {
-        font-size: 36px;
+        font-size: 34px;
         margin-bottom: 10px;
     }
 
@@ -141,11 +136,11 @@ footer a:hover {
     }
 
     .profilbild {
-        width: 240px;
+        width: 220px;
     }
 
     footer {
-        padding: 12px;
+        padding: 10px;
         font-size: 12px;
     }
 }
