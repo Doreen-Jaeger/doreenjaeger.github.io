@@ -53,19 +53,20 @@ main {
     padding-top: 40px;
 }
 
+/* 🔽 NEU: seitlicher Innenabstand */
+
 .hero {
     text-align: center;
     width: 100%;
     max-width: 900px;
+    padding: 0 40px;   /* ← sorgt für Abstand zu den Rändern */
 }
 
 .hero h1 {
     font-size: clamp(42px, 6vw, 64px);
     font-weight: 500;
-    margin-bottom: 15px; /* bleibt exakt */
+    margin-bottom: 15px;
 }
-
-/* 🔽 deutlich weiter nach unten verschoben */
 
 .subline {
     font-size: clamp(16px, 2.2vw, 22px);
@@ -73,8 +74,6 @@ main {
     margin: 60px auto 50px;
     max-width: 600px;
 }
-
-/* 🔽 Linie weiter nach unten */
 
 .divider {
     width: 80%;
@@ -88,8 +87,6 @@ main {
         transparent 100%
     );
 }
-
-/* 🔽 Bild ebenfalls weiter nach unten */
 
 .profilbild {
     width: clamp(220px, 38vw, 420px);
@@ -136,6 +133,10 @@ footer a:hover {
 
     main {
         padding-top: 25px;
+    }
+
+    .hero {
+        padding: 0 20px;  /* etwas kleinerer Rand auf Mobile */
     }
 
     .hero h1 {
