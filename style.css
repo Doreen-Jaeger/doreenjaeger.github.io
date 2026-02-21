@@ -1,6 +1,6 @@
-/* ============================= */
+/* ================================= */
 /* RESET */
-/* ============================= */
+/* ================================= */
 
 * {
     margin: 0;
@@ -16,24 +16,25 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* ============================= */
+/* ================================= */
 /* PREMIUM NAVIGATION */
-/* ============================= */
+/* ================================= */
 
 header {
     position: sticky;
     top: 0;
     background-color: #d8cfc2;
-    padding: 25px 0;
+    padding: 30px 0;
     border-bottom: 1px solid rgba(110,79,70,0.15);
     z-index: 1000;
 }
 
 .main-nav {
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    gap: 35px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-nav a {
@@ -45,7 +46,7 @@ header {
     transition: 0.3s ease;
 }
 
-/* Hover Linie elegant */
+/* Elegante Hover-Linie */
 .main-nav a::after {
     content: "";
     position: absolute;
@@ -61,36 +62,36 @@ header {
     width: 100%;
 }
 
-/* ============================= */
+/* ================================= */
 /* CONTAINER */
-/* ============================= */
+/* ================================= */
 
 .container {
-    width: 88%;
+    width: 85%;
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 140px auto;
 }
 
-/* ============================= */
+/* ================================= */
 /* HERO PREMIUM */
-/* ============================= */
+/* ================================= */
 
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 80px;
+    gap: 100px;
 }
 
 .hero-text h1 {
     font-size: 72px;
     font-weight: 500;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .hero-subline {
-    font-size: 22px;
-    margin-bottom: 30px;
+    font-size: 24px;
+    margin-bottom: 35px;
     max-width: 500px;
 }
 
@@ -98,60 +99,61 @@ header {
     width: 60px;
     height: 1px;
     background-color: rgba(110,79,70,0.4);
-    margin: 30px 0;
+    margin: 35px 0;
 }
 
 .hero-description {
-    font-size: 18px;
-    max-width: 520px;
+    font-size: 19px;
+    max-width: 540px;
 }
 
 .hero-image img {
     width: 100%;
     border-radius: 35px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
 }
 
-/* ============================= */
+/* ================================= */
 /* SECTION STYLE */
-/* ============================= */
+/* ================================= */
 
 section {
-    margin-top: 140px;
+    margin-top: 160px;
 }
 
 section h2 {
     font-size: 48px;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 section p {
     font-size: 19px;
     max-width: 800px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 ul {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 ul li {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     font-size: 18px;
 }
 
-/* ============================= */
-/* PREMIUM BUTTON LINKS */
-/* ============================= */
+/* ================================= */
+/* BUTTON LINKS */
+/* ================================= */
 
 .button-link {
     display: inline-block;
-    padding: 12px 22px;
+    padding: 14px 24px;
     border: 1px solid #6e4f46;
     text-decoration: none;
     color: #6e4f46;
     transition: 0.3s ease;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .button-link:hover {
@@ -159,33 +161,39 @@ ul li {
     color: #ffffff;
 }
 
-/* ============================= */
+/* ================================= */
 /* FOOTER */
-/* ============================= */
+/* ================================= */
 
 footer {
-    margin-top: 160px;
+    margin-top: 180px;
     font-size: 14px;
     text-align: center;
     opacity: 0.7;
 }
 
-/* ============================= */
+/* ================================= */
 /* MOBILE OPTIMIERUNG */
-/* ============================= */
+/* ================================= */
 
 @media (max-width: 1000px) {
 
+    .main-nav {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
     .hero {
         grid-template-columns: 1fr;
-        gap: 60px;
+        gap: 70px;
     }
 
     .hero-text h1 {
         font-size: 52px;
     }
 
-    .main-nav {
-        gap: 20px;
+    .container {
+        margin: 100px auto;
     }
 }
