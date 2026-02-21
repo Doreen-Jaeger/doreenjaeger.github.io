@@ -1,125 +1,38 @@
-/* ===== Basis Reset ===== */
+/* ===== Über mich Layout ===== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'DM Sans', sans-serif;
-    background-color: #cfc6bb;
-    color: #5a463c;
-    text-align: center;
+.about-wrapper {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* ===== Navigation ===== */
-
-header {
-    padding: 20px 0;
-}
-
-.navigation {
-    display: flex;
-    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
-    gap: 28px;
+    gap: 40px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.mini-bild {
+    width: 140px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.about-text {
+    max-width: 600px;
     font-size: 18px;
+    line-height: 1.7;
 }
 
-.navigation a {
-    text-decoration: none;
-    color: #5a463c;
-    font-weight: 400;
-}
-
-.navigation a:hover {
-    opacity: 0.7;
-}
-
-/* ===== Main Bereich ===== */
-
-main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero {
-    max-width: 900px;
-    padding: 0 40px;
-}
-
-/* ===== Überschrift ===== */
-
-h1 {
-    font-size: 56px;
-    font-weight: 400;
-    margin-bottom: 35px;
-}
-
-/* ===== Subline ===== */
-
-.subline {
-    font-size: 22px;
-    line-height: 1.6;
-    margin-bottom: 40px;
-}
-
-/* ===== Divider mit Verlauf ===== */
-
-.divider {
-    height: 2px;
-    width: 60%;
-    margin: 0 auto 45px auto;
-    background: linear-gradient(
-        to right,
-        rgba(90,70,60,0),
-        rgba(90,70,60,0.6),
-        rgba(90,70,60,0)
-    );
-}
-
-/* ===== Profilbild ===== */
-
-.profilbild {
-    width: 320px;
-    max-width: 90%;
-    border-radius: 40px;
-    display: block;
-    margin: 0 auto;
-}
-
-/* ===== Footer ===== */
-
-footer {
-    padding: 25px 0;
-    font-size: 16px;
-}
-
-/* ===== Responsive ===== */
+/* ===== Responsive Anpassung ===== */
 
 @media (max-width: 768px) {
 
-    h1 {
-        font-size: 42px;
+    .about-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .subline {
-        font-size: 18px;
-    }
-
-    .navigation {
-        gap: 18px;
-        font-size: 16px;
-    }
-
-    .hero {
-        padding: 0 25px;
+    .about-text {
+        text-align: center;
     }
 
 }
