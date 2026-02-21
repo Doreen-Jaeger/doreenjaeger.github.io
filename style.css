@@ -48,7 +48,7 @@ header {
 main {
     flex: 1;
     display: flex;
-    align-items: flex-start;   /* ← WICHTIG: nicht mehr center */
+    align-items: flex-start;
     justify-content: center;
     padding-top: 40px;
 }
@@ -72,12 +72,28 @@ main {
     max-width: 600px;
 }
 
+/* ========================= */
+/* NEUE ELEGANTE LINIE */
+/* ========================= */
+
 .divider {
-    width: 60%;
-    height: 2px;
-    background-color: #c9c1b6;
-    margin: 20px auto 25px;
+    width: 85%;
+    height: 3px;
+    margin: 25px auto 35px;
+    border-radius: 2px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #9b8579,
+        #6b4f45,
+        #9b8579,
+        transparent
+    );
 }
+
+/* ========================= */
+/* FOTO */
+/* ========================= */
 
 .profilbild {
     width: clamp(220px, 38vw, 420px);
@@ -136,7 +152,9 @@ footer a:hover {
     }
 
     .divider {
-        margin: 15px auto 20px;
+        width: 90%;
+        height: 2px;
+        margin: 18px auto 25px;
     }
 
     .profilbild {
