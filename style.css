@@ -82,7 +82,7 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 35px;
 }
 
 .hero-text h1 {
@@ -95,16 +95,28 @@ main {
     max-width: 600px;
 }
 
+/* ✨ MODERNER AKZENT */
+
 .hero-divider {
-    width: 50px;
-    height: 1px;
-    background-color: rgba(110,79,70,0.4);
+    width: 80px;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(
+        90deg,
+        rgba(110,79,70,0.15),
+        #6e4f46,
+        rgba(110,79,70,0.15)
+    );
 }
 
+/* =============================== */
+/* BILD */
+/* =============================== */
+
 .hero-image img {
-    width: 280px;   /* 👈 Bild kleiner */
-    border-radius: 25px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    width: 260px;
+    border-radius: 28px;
+    box-shadow: 0 18px 50px rgba(0,0,0,0.10);
 }
 
 /* =============================== */
@@ -134,6 +146,6 @@ footer {
     }
 
     .hero-image img {
-        width: 220px;
+        width: 210px;
     }
 }
