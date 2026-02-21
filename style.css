@@ -73,21 +73,19 @@ main {
 }
 
 /* ========================= */
-/* NEUE ELEGANTE LINIE */
+/* PREMIUM LINIE MIT SOFTEN ENDEN */
 /* ========================= */
 
 .divider {
-    width: 85%;
-    height: 3px;
+    width: 80%;
+    height: 2px;
     margin: 25px auto 35px;
-    border-radius: 2px;
     background: linear-gradient(
         to right,
-        transparent,
-        #9b8579,
-        #6b4f45,
-        #9b8579,
-        transparent
+        transparent 0%,
+        #6b4f45 15%,
+        #6b4f45 85%,
+        transparent 100%
     );
 }
 
