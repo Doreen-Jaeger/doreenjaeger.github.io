@@ -1,5 +1,5 @@
 /* ============================= */
-/* Grundlayout */
+/* RESET */
 /* ============================= */
 
 * {
@@ -7,6 +7,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ============================= */
+/* BODY */
+/* ============================= */
 
 body {
     font-family: 'Cormorant Garamond', serif;
@@ -16,30 +20,22 @@ body {
 }
 
 /* ============================= */
-/* Container */
+/* CONTAINER */
 /* ============================= */
 
 .container {
     width: 90%;
     max-width: 1100px;
     margin: auto;
+    padding: 40px 0;
 }
 
 /* ============================= */
-/* Hero Bereich */
+/* HERO */
 /* ============================= */
 
 .hero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 0;
-}
-
-.hero-text {
-    flex: 1;
-    min-width: 280px;
+    margin-bottom: 60px;
 }
 
 .hero-text h1 {
@@ -50,35 +46,28 @@ body {
 
 .hero-text p {
     font-size: 20px;
-    max-width: 500px;
-}
-
-.hero img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 25px;
-    margin-top: 30px;
+    max-width: 600px;
+    margin-bottom: 30px;
 }
 
 /* ============================= */
-/* Navigation - Horizontale Menüleiste */
+/* NAVIGATION HORIZONTAL */
 /* ============================= */
 
 nav {
     width: 100%;
-    margin: 30px 0 50px 0;
     text-align: center;
+    margin: 30px 0 40px 0;
 }
 
 nav a {
     display: inline-block;
-    margin: 0 18px;
+    margin: 0 15px;
     text-decoration: none;
     color: #7a5a4f;
     font-size: 18px;
     font-weight: 500;
-    position: relative;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 /* Hover Effekt */
@@ -86,66 +75,89 @@ nav a:hover {
     opacity: 0.6;
 }
 
-/* Linie unter aktivem Menüpunkt */
-nav a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    background: #7a5a4f;
-    left: 0;
-    bottom: -4px;
-    transition: 0.3s;
-}
+/* ============================= */
+/* IMAGE */
+/* ============================= */
 
-nav a:hover::after {
+img {
     width: 100%;
+    max-width: 600px;
+    border-radius: 30px;
+    margin-top: 30px;
 }
 
-/* Mobile Ansicht */
-@media (max-width: 768px) {
-    nav a {
-        display: block;
-        margin: 8px 0;
-    }
+/* ============================= */
+/* SECTIONS */
+/* ============================= */
+
+section {
+    margin-bottom: 80px;
 }
 
+section h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+}
 
+section p {
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+/* ============================= */
+/* LIST */
+/* ============================= */
+
+ul {
+    margin-top: 15px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* ============================= */
+/* BUTTON LINKS */
+/* ============================= */
+
+.button-link {
     display: inline-block;
-    margin: 0 18px;
+    padding: 10px 18px;
+    border: 1px solid #7a5a4f;
     text-decoration: none;
     color: #7a5a4f;
-    font-size: 18px;
-    font-weight: 500;
-    position: relative;
     transition: 0.3s;
 }
 
-/* Hover Effekt */
-nav a:hover {
-    opacity: 0.6;
+.button-link:hover {
+    background-color: #7a5a4f;
+    color: #ffffff;
 }
 
-/* Linie unter aktivem Menüpunkt */
-nav a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    background: #7a5a4f;
-    left: 0;
-    bottom: -4px;
-    transition: 0.3s;
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    margin-top: 60px;
+    font-size: 14px;
+    opacity: 0.7;
 }
 
-nav a:hover::after {
-    width: 100%;
-}
+/* ============================= */
+/* MOBILE */
+/* ============================= */
 
-/* Mobile Ansicht */
 @media (max-width: 768px) {
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
     nav a {
         display: block;
         margin: 8px 0;
     }
+
 }
