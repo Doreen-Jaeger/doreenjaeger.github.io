@@ -1,153 +1,103 @@
 /* ===== Basis ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-margin: 0;
-font-family: 'DM Sans', sans-serif;
-background-color: #c9c0b4;
-color: #5c4a3f;
-text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #c9c0b4;
+    color: #5c4a3f;
+    text-align: center;
 }
 
-h1 {
-font-size: 48px;
-font-weight: 400;
-margin-top: 80px;
-margin-bottom: 30px;
-}
-
-p {
-font-size: 20px;
-line-height: 1.6;
-margin: 0 auto 20px auto;
-max-width: 700px;
-}
-
-/* ===== Navigation ===== */
-
+/* ===== Header ===== */
 header {
-padding: 25px 0 20px 0;
-border-bottom: 1px solid rgba(92, 74, 63, 0.15);
+    padding: 15px 0 10px 0;
+    border-bottom: 1px solid rgba(92,74,63,0.25);
 }
 
 .navigation {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 30px;
-max-width: 1100px;
-margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 17px;
 }
 
 .navigation a {
-text-decoration: none;
-color: #5c4a3f;
-font-size: 18px;
-font-weight: 400;
+    text-decoration: none;
+    color: #5c4a3f;
+    transition: 0.2s ease;
 }
 
 .navigation a:hover {
-opacity: 0.7;
+    opacity: 0.6;
 }
 
-/* ===== Hero Bereich ===== */
-
+/* ===== Hero ===== */
 .hero {
-padding-bottom: 80px;
+    padding: 30px 20px 20px 20px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
 .subline {
-font-size: 22px;
-margin-top: 10px;
-margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 550px;
+    margin: 0 auto 20px auto;
 }
-
-/* ===== Divider mit Verlauf ===== */
 
 .divider {
-width: 420px;
-height: 2px;
-margin: 40px auto;
-background: linear-gradient(
-to right,
-transparent,
-#5c4a3f,
-transparent
-);
-opacity: 0.5;
+    height: 1px;
+    width: 200px;
+    margin: 15px auto 25px auto;
+    background: linear-gradient(to right, transparent, rgba(92,74,63,0.4), transparent);
 }
-
-/* ===== Profilbild Startseite (optimiert) ===== */
 
 .hero img {
-width: 260px;
-max-width: 90%;
-border-radius: 40px;
-display: block;
-margin: 20px auto 0 auto;
-}
-
-/* ===== Über mich Layout ===== */
-
-.about-wrapper {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 40px;
-}
-
-.about-image img {
-width: 95px;
-height: 95px;
-object-fit: cover;
-border-radius: 50%;
-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-margin-bottom: 30px;
-}
-
-.about-text {
-max-width: 600px;
-text-align: center;
-font-size: 18px;
-line-height: 1.7;
+    width: 240px;   /* vorher größer */
+    max-width: 85%;
+    border-radius: 40px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* ===== Footer ===== */
-
 footer {
-padding: 25px 0;
-font-size: 16px;
-border-top: 1px solid rgba(92, 74, 63, 0.2);
-margin-top: 80px;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(92,74,63,0.25);
+    font-size: 15px;
 }
 
 /* ===== Responsive ===== */
-
 @media (max-width: 768px) {
 
-h1 {
-font-size: 38px;
-margin-top: 60px;
-}
+    header {
+        padding: 12px 0 8px 0;
+    }
 
-.navigation {
-gap: 18px;
-}
+    .navigation {
+        font-size: 15px;
+        gap: 14px;
+    }
 
-.subline {
-font-size: 20px;
-}
+    h1 {
+        font-size: 34px;
+    }
 
-.hero img {
-width: 220px;
-}
+    .subline {
+        font-size: 18px;
+    }
 
-.about-image img {
-width: 85px;
-height: 85px;
-}
-
-.divider {
-width: 280px;
-}
-
+    .hero img {
+        width: 210px;
+    }
 }
