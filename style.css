@@ -62,24 +62,24 @@ main {
 .hero h1 {
     font-size: clamp(42px, 6vw, 64px);
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* bleibt unverändert */
 }
+
+/* 🔽 Subline nach unten verschoben */
 
 .subline {
     font-size: clamp(16px, 2.2vw, 22px);
     line-height: 1.6;
-    margin: 0 auto 20px;
+    margin: 25px auto 35px; /* vorher kleiner */
     max-width: 600px;
 }
 
-/* ========================= */
-/* PREMIUM LINIE MIT SOFTEN ENDEN */
-/* ========================= */
+/* 🔽 Divider ebenfalls nach unten */
 
 .divider {
     width: 80%;
     height: 2px;
-    margin: 25px auto 35px;
+    margin: 35px auto 45px;
     background: linear-gradient(
         to right,
         transparent 0%,
@@ -89,13 +89,12 @@ main {
     );
 }
 
-/* ========================= */
-/* FOTO */
-/* ========================= */
+/* 🔽 Bild leicht weiter nach unten */
 
 .profilbild {
     width: clamp(220px, 38vw, 420px);
     border-radius: 30px;
+    margin-top: 10px;
 }
 
 /* ========================= */
@@ -146,13 +145,12 @@ footer a:hover {
 
     .subline {
         font-size: 15px;
-        margin-bottom: 15px;
+        margin: 20px auto 25px;
     }
 
     .divider {
         width: 90%;
-        height: 2px;
-        margin: 18px auto 25px;
+        margin: 25px auto 30px;
     }
 
     .profilbild {
