@@ -16,10 +16,6 @@ body {
     flex-direction: column;
 }
 
-/* ========================= */
-/* NAVIGATION */
-/* ========================= */
-
 header {
     border-bottom: 1px solid rgba(0,0,0,0.08);
 }
@@ -41,10 +37,6 @@ header {
     opacity: 0.6;
 }
 
-/* ========================= */
-/* HERO */
-/* ========================= */
-
 main {
     flex: 1;
     display: flex;
@@ -53,13 +45,11 @@ main {
     padding-top: 40px;
 }
 
-/* 🔽 NEU: seitlicher Innenabstand */
-
 .hero {
     text-align: center;
     width: 100%;
     max-width: 900px;
-    padding: 0 40px;   /* ← sorgt für Abstand zu den Rändern */
+    padding: 0 40px;
 }
 
 .hero h1 {
@@ -94,10 +84,6 @@ main {
     margin-top: 20px;
 }
 
-/* ========================= */
-/* FOOTER */
-/* ========================= */
-
 footer {
     border-top: 1px solid rgba(0,0,0,0.08);
     text-align: center;
@@ -105,19 +91,6 @@ footer {
     font-size: 13px;
     color: #7a665c;
 }
-
-footer a {
-    color: #6b4f45;
-    text-decoration: none;
-}
-
-footer a:hover {
-    opacity: 0.6;
-}
-
-/* ========================= */
-/* MOBILE */
-/* ========================= */
 
 @media (max-width: 600px) {
 
@@ -136,7 +109,7 @@ footer a:hover {
     }
 
     .hero {
-        padding: 0 20px;  /* etwas kleinerer Rand auf Mobile */
+        padding: 0 20px;
     }
 
     .hero h1 {
