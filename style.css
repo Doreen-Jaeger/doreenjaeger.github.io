@@ -96,8 +96,8 @@ h1 {
 }
 
 .about-image img {
-    width: 140px;
-    height: 140px;
+    width: 110px;        /* 👈 neue Premium-Größe */
+    height: 110px;
     object-fit: cover;
     border-radius: 50%;
 }
