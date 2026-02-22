@@ -1,6 +1,6 @@
-/* ===================================================== */
-/* RESET */
-/* ===================================================== */
+/* ===============================
+   BASIS
+================================= */
 
 * {
     margin: 0;
@@ -10,141 +10,128 @@
 
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: #c9c0b4;
-    color: #5c4a3f;
-    text-align: center;
-    line-height: 1.6;
+    background-color: #bfb6aa;
+    color: #4e443c;
+    line-height: 1.7;
 }
 
-/* ===================================================== */
-/* HEADER */
-/* ===================================================== */
+/* ===============================
+   HEADER
+================================= */
 
 header {
-    padding: 16px 0 12px 0;
-    border-bottom: 1px solid rgba(92,74,63,0.25);
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .navigation {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 18px;
-    font-size: 16px;
 }
 
 .navigation a {
     text-decoration: none;
-    color: #5c4a3f;
+    color: #4e443c;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.navigation a:hover {
-    opacity: 0.6;
-}
-
-/* ===================================================== */
-/* STARTSEITE */
-/* ===================================================== */
-
-.home main {
-    padding-top: 60px;
-    padding-bottom: 40px;
-}
-
-.home-hero {
-    max-width: 650px;
-    margin: 0 auto;
-}
-
-.home-hero h1 {
-    font-size: clamp(30px, 5vw, 42px);
-    margin-bottom: 12px;
-}
-
-.subline {
-    font-size: clamp(16px, 3.5vw, 20px);
-    margin-bottom: 18px;
-}
-
-.home-hero img {
-    width: 220px;
-    max-width: 80%;
-    border-radius: 40px;
-    margin-top: 18px;
-}
-
-/* ===================================================== */
-/* NORMALE SEITEN */
-/* ===================================================== */
+/* ===============================
+   MAIN LAYOUT
+================================= */
 
 main {
-    padding: 60px 20px;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 60px 20px 80px 20px;
+    text-align: center;
 }
 
 h1 {
-    font-size: 40px;
-    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 25px;
 }
 
 .divider {
+    width: 60px;
     height: 1px;
-    width: 200px;
-    margin: 20px auto 30px auto;
-    background: linear-gradient(
-        to right,
-        transparent,
-        rgba(92,74,63,0.4),
-        transparent
-    );
+    background-color: rgba(0,0,0,0.15);
+    margin: 25px auto 50px auto;
 }
 
-/* ===================================================== */
-/* CONTENT SECTION (NEU LUFTIGER) */
-/* ===================================================== */
+/* ===============================
+   CONTENT SECTION
+================================= */
 
 .content-section {
     max-width: 700px;
     margin: 0 auto;
 }
 
+/* ===============================
+   TEXTABSÄTZE
+================================= */
+
 .content-section p {
-    margin-bottom: 26px;   /* Variante A – luftiger */
+    margin-bottom: 28px;
+    font-size: 18px;
 }
 
-/* ===================================================== */
-/* ÜBER MICH */
-/* ===================================================== */
+/* ===============================
+   TEILÜBERSCHRIFTEN (KATEGORIEN)
+================================= */
 
-.about-section {
-    max-width: 750px;
-    margin: 0 auto;
+.content-section h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 55px;      /* Mehr Abstand nach oben */
+    margin-bottom: 18px;   /* Etwas Abstand zur Liste */
+    text-align: center;    /* Überschrift bleibt zentriert */
 }
 
-.about-image img {
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 22px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+/* ===============================
+   PROFESSIONELLE LISTENOPTIK
+================================= */
+
+.content-section ul {
+    list-style-type: disc;
+    text-align: left;          /* Links ausgerichtet */
+    padding-left: 28px;        /* Einrückung für saubere Linie */
+    margin-bottom: 35px;       /* Mehr Luft zur nächsten Kategorie */
 }
 
-.about-text {
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.7;
+.content-section li {
+    margin-bottom: 10px;       /* Luft zwischen Punkten */
+    font-size: 18px;
 }
 
-.about-text p {
-    margin-bottom: 18px;
-}
-
-/* ===================================================== */
-/* FOOTER */
-/* ===================================================== */
+/* ===============================
+   FOOTER
+================================= */
 
 footer {
-    padding: 18px 0;
-    border-top: 1px solid rgba(92,74,63,0.25);
+    text-align: center;
+    padding: 20px 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
     font-size: 14px;
+}
+
+/* ===============================
+   STARTSEITE FIXIERUNG
+================================= */
+
+body.home {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body.home main {
+    height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
