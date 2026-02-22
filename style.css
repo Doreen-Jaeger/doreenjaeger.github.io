@@ -43,31 +43,22 @@ header {
 }
 
 /* ===================================================== */
-/* STARTSEITE – ENDGÜLTIG KORREKT */
+/* STARTSEITE – STABIL OHNE FLEX-VERSCHIEBUNG */
 /* ===================================================== */
 
-.home {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Zentrierung ohne Abschneiden */
 .home main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
 }
 
 /* Kein Scroll auf Startseite */
 .home {
+    height: 100vh;
     overflow: hidden;
 }
 
 .home-hero {
     max-width: 650px;
+    margin: 0 auto;
 }
 
 .home-hero h1 {
