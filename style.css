@@ -133,3 +133,11 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.1);
     font-size: 14px;
 }
+/* ===============================
+   SEITE 5 – KERNKOMPETENZEN (isoliert)
+================================= */
+
+.kompetenz-liste {
+    text-align: left;
+    margin: 0 auto 40px auto;
+    max-width:
