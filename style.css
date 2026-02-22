@@ -43,20 +43,25 @@ header {
 }
 
 /* ===================================================== */
-/* STARTSEITE – v10 STRUKTUR MIT SICHTBAREM FOOTER */
+/* STARTSEITE – FESTE ANSICHT */
 /* ===================================================== */
 
 .home {
-    min-height: 100vh;   /* wichtig: nicht height */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .home main {
-    padding: 40px 20px 20px 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .home-hero {
     max-width: 650px;
-    margin: 0 auto;
 }
 
 .home-hero h1 {
