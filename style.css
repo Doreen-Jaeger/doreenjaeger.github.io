@@ -40,6 +40,22 @@ header {
 }
 
 /* ===============================
+   STARTSEITE FIXIERT
+================================= */
+
+body.home {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body.home main {
+    height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ===============================
    MAIN LAYOUT
 ================================= */
 
@@ -82,30 +98,28 @@ h1 {
 }
 
 /* ===============================
-   TEILÜBERSCHRIFTEN (KATEGORIEN)
+   TEILÜBERSCHRIFTEN
 ================================= */
 
 .content-section h2 {
     font-size: 26px;
     font-weight: 600;
-    margin-top: 55px;
+    margin-top: 45px;
     margin-bottom: 18px;
     text-align: center;
 }
 
 /* ===============================
-   PROFESSIONELLE LISTENOPTIK
+   LISTEN (alte Version – zentriert)
 ================================= */
 
 .content-section ul {
-    list-style-type: disc;
-    text-align: left;
-    padding-left: 28px;
-    margin-bottom: 35px;
+    list-style-position: inside;
+    margin-bottom: 30px;
 }
 
 .content-section li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 18px;
 }
 
