@@ -156,3 +156,20 @@ footer {
     margin-bottom: 10px;
     font-size: 18px;
 }
+/* ===============================
+   STARTSEITE – OPTISCH ZENTRIERT
+================================= */
+
+.home main {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home .content-section img {
+    max-width: 340px;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 40px;
+}
