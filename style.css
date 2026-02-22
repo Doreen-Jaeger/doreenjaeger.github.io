@@ -160,6 +160,9 @@ footer {
     margin: 20px auto 20px auto;
 display: block;
 }
+.home .content-section p {
+    margin-top: 35px;
+}
 /* ===============================
    ÜBER MICH – MINI FOTO
 ================================= */
