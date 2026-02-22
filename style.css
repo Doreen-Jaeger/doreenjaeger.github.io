@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: #c9c0b4;
@@ -47,26 +43,27 @@ header {
 }
 
 /* ===================================================== */
-/* STARTSEITE – RICHTIG FIXIERT MIT SICHTBAREM FOOTER */
+/* STARTSEITE – ENDGÜLTIG KORREKT */
 /* ===================================================== */
 
 .home {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
-/* verhindert Scroll nur wenn Inhalt passt */
-.home {
-    overflow-y: hidden;
-}
-
+/* Zentrierung ohne Abschneiden */
 .home main {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 20px 20px 20px;
+    padding: 20px;
+}
+
+/* Kein Scroll auf Startseite */
+.home {
+    overflow: hidden;
 }
 
 .home-hero {
