@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overscroll-behavior-y: none; /* verhindert Mobile Bounce */
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: #c9c0b4;
@@ -17,7 +21,7 @@ body {
 }
 
 /* ===================================================== */
-/* HEADER */
+/* HEADER / NAVIGATION */
 /* ===================================================== */
 
 header {
@@ -85,14 +89,13 @@ header {
 }
 
 /* ===================================================== */
-/* NORMALE SEITEN (inkl. Über mich) */
+/* NORMALE SEITEN */
 /* ===================================================== */
 
 main {
     padding: 60px 20px;
-    min-height: calc(100dvh - 120px); 
-    /* sorgt dafür, dass kurze Seiten nicht "wackeln",
-       aber erlaubt Scroll wenn Text länger wird */
+    min-height: calc(100dvh - 120px);
+    overscroll-behavior: none;
 }
 
 h1 {
