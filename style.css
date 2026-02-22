@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: #c9c0b4;
@@ -21,7 +17,7 @@ body {
 }
 
 /* ===================================================== */
-/* HEADER / NAVIGATION */
+/* HEADER */
 /* ===================================================== */
 
 header {
@@ -52,8 +48,8 @@ header {
 /* ===================================================== */
 
 .home {
-    height: 100dvh;          /* exakte Viewport Höhe */
-    overflow: hidden;        /* verhindert Scroll & Bounce */
+    height: 100dvh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -89,11 +85,14 @@ header {
 }
 
 /* ===================================================== */
-/* NORMALE SEITEN */
+/* NORMALE SEITEN (inkl. Über mich) */
 /* ===================================================== */
 
 main {
     padding: 60px 20px;
+    min-height: calc(100dvh - 120px); 
+    /* sorgt dafür, dass kurze Seiten nicht "wackeln",
+       aber erlaubt Scroll wenn Text länger wird */
 }
 
 h1 {
