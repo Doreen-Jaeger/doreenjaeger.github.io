@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: #c9c0b4;
@@ -43,32 +47,30 @@ header {
 }
 
 /* ===================================================== */
-/* STARTSEITE – KORREKT FIXIERT */
+/* STARTSEITE – RICHTIG FIXIERT MIT SICHTBAREM FOOTER */
 /* ===================================================== */
 
 .home {
     display: flex;
     flex-direction: column;
-    height: 100dvh;
+    min-height: 100vh;
 }
 
-/* Nur der Inhaltsbereich wird fixiert */
+/* verhindert Scroll nur wenn Inhalt passt */
+.home {
+    overflow-y: hidden;
+}
+
 .home main {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-}
-
-/* Footer bleibt normaler Teil des Layouts */
-.home footer {
-    flex-shrink: 0;
+    padding: 40px 20px 20px 20px;
 }
 
 .home-hero {
     max-width: 650px;
-    padding: 10px 20px;
 }
 
 .home-hero h1 {
@@ -94,7 +96,7 @@ header {
 
 main {
     padding: 60px 20px;
-    min-height: calc(100dvh - 140px);
+    min-height: calc(100vh - 140px);
 }
 
 h1 {
