@@ -47,14 +47,14 @@ header {
 }
 
 /* ===================================================== */
-/* STARTSEITE – MOBILE STABIL FIXIERT */
+/* STARTSEITE – FEST + FOOTER SICHTBAR */
 /* ===================================================== */
 
 .home {
-    height: 100dvh;          /* WICHTIG: statt 100vh */
+    height: 100dvh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;        /* verhindert Scrollen */
+    overflow: hidden;
 }
 
 .home main {
@@ -63,6 +63,10 @@ header {
     align-items: center;
     justify-content: center;
     padding: 20px;
+}
+
+.home footer {
+    flex-shrink: 0;
 }
 
 .home-hero {
