@@ -43,17 +43,15 @@ header {
 }
 
 /* ===================================================== */
-/* STARTSEITE – STABIL OHNE FLEX-VERSCHIEBUNG */
+/* STARTSEITE – v10 STRUKTUR MIT SICHTBAREM FOOTER */
 /* ===================================================== */
+
+.home {
+    min-height: 100vh;   /* wichtig: nicht height */
+}
 
 .home main {
     padding: 40px 20px 20px 20px;
-}
-
-/* Kein Scroll auf Startseite */
-.home {
-    height: 100vh;
-    overflow: hidden;
 }
 
 .home-hero {
