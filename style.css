@@ -147,3 +147,12 @@ footer {
     margin-bottom: 10px;
     font-size: 18px;
 }
+.kompetenz-liste ul {
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
+.kompetenz-liste li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
