@@ -82,19 +82,7 @@ h1 {
     margin-bottom: 28px;
     font-size: 18px;
 }
-/* ===============================
-   MOTIVATION – bessere Lesbarkeit
-================================= */
 
-.hero p {
-    font-size: 18px;
-    line-height: 1.9;
-    margin-bottom: 22px;
-}
-
-.hero .subline {
-    margin-bottom: 28px;
-}
 /* ===============================
    TEILÜBERSCHRIFTEN
 ================================= */
