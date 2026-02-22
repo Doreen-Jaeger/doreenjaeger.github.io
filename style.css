@@ -44,14 +44,13 @@ header {
 }
 
 /* ===================================================== */
-/* STARTSEITE – FEST MIT FOOTER */
+/* STARTSEITE – FEST MIT SICHTBAREM FOOTER */
 /* ===================================================== */
 
 .home {
     height: 100dvh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 .home main {
@@ -81,6 +80,11 @@ header {
     max-width: 80%;
     border-radius: 40px;
     margin-top: 18px;
+}
+
+/* Startseite darf nicht scrollen */
+.home {
+    overflow: hidden;
 }
 
 /* Footer bleibt sichtbar */
