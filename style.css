@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: #c9c0b4;
@@ -21,7 +17,7 @@ body {
 }
 
 /* ===================================================== */
-/* HEADER (FINAL – NICHT VERÄNDERN) */
+/* HEADER (UNVERÄNDERT) */
 /* ===================================================== */
 
 header {
@@ -47,33 +43,21 @@ header {
 }
 
 /* ===================================================== */
-/* STARTSEITE – PERFEKT ZENTRIERT */
+/* STARTSEITE */
 /* ===================================================== */
-
-.home {
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-/* Header + Footer bleiben normal */
-/* Main nimmt exakt den freien Platz dazwischen */
 
 .home main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
+    padding-top: 60px;   /* ← hier wird angehoben */
+    padding-bottom: 40px;
 }
 
 /* ===================================================== */
-/* HERO INHALT */
+/* HERO */
 /* ===================================================== */
 
 .home-hero {
     max-width: 650px;
+    margin: 0 auto;
 }
 
 .home-hero h1 {
@@ -99,7 +83,6 @@ header {
 
 main {
     padding: 60px 20px;
-    min-height: calc(100vh - 140px);
 }
 
 h1 {
@@ -148,7 +131,7 @@ h1 {
 }
 
 /* ===================================================== */
-/* FOOTER (FINAL – NICHT VERÄNDERN) */
+/* FOOTER (BLEIBT WIE GESPEICHERT) */
 /* ===================================================== */
 
 footer {
