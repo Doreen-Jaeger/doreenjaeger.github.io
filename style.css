@@ -52,7 +52,7 @@ body.home main {
     height: calc(100vh - 140px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 /* ===============================
