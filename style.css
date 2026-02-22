@@ -39,21 +39,7 @@ header {
     font-weight: 500;
 }
 
-/* ===============================
-   STARTSEITE FIXIERT
-================================= */
 
-body.home {
-    height: 100vh;
-    overflow: hidden;
-}
-
-body.home main {
-    height: calc(100vh - 140px);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
 
 /* ===============================
    MAIN LAYOUT
