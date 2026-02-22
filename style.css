@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-html {
-    overscroll-behavior-y: none; /* verhindert Mobile Bounce */
-}
-
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: #c9c0b4;
@@ -21,7 +17,7 @@ body {
 }
 
 /* ===================================================== */
-/* HEADER / NAVIGATION */
+/* HEADER */
 /* ===================================================== */
 
 header {
@@ -48,14 +44,14 @@ header {
 }
 
 /* ===================================================== */
-/* STARTSEITE – HARD LOCKED */
+/* STARTSEITE – FEST MIT FOOTER */
 /* ===================================================== */
 
 .home {
     height: 100dvh;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .home main {
@@ -63,7 +59,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 .home-hero {
@@ -88,14 +83,18 @@ header {
     margin-top: 18px;
 }
 
+/* Footer bleibt sichtbar */
+.home footer {
+    flex-shrink: 0;
+}
+
 /* ===================================================== */
 /* NORMALE SEITEN */
 /* ===================================================== */
 
 main {
     padding: 60px 20px;
-    min-height: calc(100dvh - 120px);
-    overscroll-behavior: none;
+    min-height: calc(100dvh - 140px);
 }
 
 h1 {
