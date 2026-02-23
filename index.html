@@ -43,8 +43,20 @@
 </main>
 
 <footer>
-    © 2026 Doreen Jaeger · doreenjaeger@gmx.net
+    © 2026 Doreen Jaeger · <span id="email"></span>
 </footer>
+
+<script>
+  (function() {
+    const user = "doreenjaeger";
+    const domain = "gmx.net";
+    const link = document.createElement("a");
+    link.href = "mailto:" + user + "@" + domain;
+    link.textContent = "Kontakt per E-Mail";
+    document.getElementById("email").appendChild(link);
+  })();
+</script>
 
 </body>
 </html>
+    
