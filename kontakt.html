@@ -26,7 +26,30 @@
       Ich freue mich über Ihre Kontaktaufnahme.
       Nutzen Sie gerne das folgende Formular für Ihre Nachricht.
     </p>
+<form action="https://formspree.io/f/DEINE-ID-HIER" method="POST" class="contact-form">
 
+  <label for="name">Name *</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">E-Mail *</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="subject">Betreff</label>
+  <input type="text" id="subject" name="subject">
+
+  <label for="message">Nachricht *</label>
+  <textarea id="message" name="message" rows="6" required></textarea>
+
+  <div class="checkbox">
+    <input type="checkbox" id="consent" name="consent" required>
+    <label for="consent">
+      Ich stimme der Verarbeitung meiner Daten gemäß der Datenschutzerklärung zu.
+    </label>
+  </div>
+
+  <button type="submit">Nachricht senden</button>
+
+</form>
   </section>
 </main>
 
