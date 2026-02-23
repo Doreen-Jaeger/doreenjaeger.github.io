@@ -269,7 +269,21 @@ footer a:hover::after {
 .checkbox {
   margin-top: 15px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
   font-size: 14px;
+}
+.contact-form {
+  text-align: left;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #6d5f55;
+  box-shadow: 0 0 0 2px rgba(109,95,85,0.2);
+}
+
+.checkbox {
+  align-items: center;
 }
