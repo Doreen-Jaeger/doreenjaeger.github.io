@@ -335,3 +335,14 @@ footer a:hover::after {
         font-size: 15px;
     }
 }
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    .divider {
+        width: 120px;
+        margin: 25px auto 50px;
+    }
+}
