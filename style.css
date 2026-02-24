@@ -78,22 +78,25 @@ header {
 ================================= */
 
 main {
-    max-width: 850px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 60px 20px 80px 20px;
+    padding: 80px 20px 100px;
     text-align: center;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
 }
+
 .divider {
-    width: 300px;
-    height: 2px;
-    margin: 25px auto 50px auto;
-    background: linear-gradient(to right, transparent, #6d5f55, transparent);
+    width: 180px;
+    height: 3px;
+    margin: 30px auto 70px;
+    border-radius: 3px;
+    background: linear-gradient(to right, #6d5f55, #a18c7c);
 }
 
 
