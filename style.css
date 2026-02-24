@@ -332,6 +332,10 @@ footer a:hover::after {
   transform: translateY(-2px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
+.contact-form button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
 
 .checkbox {
   margin-top: 15px;
