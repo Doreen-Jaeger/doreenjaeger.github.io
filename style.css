@@ -406,3 +406,9 @@ footer a:hover::after {
         margin: 25px auto 50px;
     }
 }
+}
+ 
+/* Startseite – gleiche Höhe wie Unterseiten */
+.startseite h1 {
+    margin-top: 120px;
+}
