@@ -287,10 +287,11 @@ footer a:hover::after {
 /* ===== Kontaktformular sauber untereinander ===== */
 
 .contact-form {
-  max-width: 600px;
-  margin: 40px auto;
-  display: flex;
-  flex-direction: column;
+    max-width: 600px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 .contact-form label {
@@ -336,9 +337,6 @@ footer a:hover::after {
   gap: 10px;
   font-size: 14px;
 }
-.contact-form {
-  text-align: left;
-}
 
 .contact-form input:focus,
 .contact-form textarea:focus {
@@ -347,9 +345,6 @@ footer a:hover::after {
   box-shadow: 0 0 0 2px rgba(109,95,85,0.2);
 }
 
-.checkbox {
-  align-items: center;
-}
 /* ===== Aktiver Footer (Kontaktseite) ===== */
 .active-footer {
     font-weight: 500;
