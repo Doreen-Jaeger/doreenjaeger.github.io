@@ -202,12 +202,14 @@ h1 {
    STARTSEITE – OPTISCH ZENTRIERT
 ================================= */
 
+/*
 .home main {
     min-height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+*/
 
 .home .content-section img {
     max-width: 220px;
