@@ -323,7 +323,7 @@ footer a:hover::after {
 .contact-form button {
   margin-top: 30px;
   padding: 14px 18px;
-  background: linear-gradient(135deg, #6d5f55, #7a6a60);
+  background: linear-gradient(135deg, #6d5f55, #a18c7c);
   color: white;
   border: none;
   border-radius: 10px;
