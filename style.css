@@ -418,3 +418,6 @@ footer a:hover::after {
 .home .divider {
     margin-top: 0px;
 }
+.content-section.kompetenz-liste h2 {
+  text-align: left !important;
+}
