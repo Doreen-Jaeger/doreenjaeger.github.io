@@ -378,6 +378,7 @@ footer a:hover::after {
 
     .navigation {
     flex-direction: column;
+       flex-wrap: wrap;
     align-items: center;
     gap: 14px;
 
