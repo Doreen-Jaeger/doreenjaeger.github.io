@@ -421,3 +421,16 @@ footer a:hover::after {
 .content-section.kompetenz-liste h2 {
   text-align: left !important;
 }
+/* ================================
+   LINKS – Design angepasst
+================================ */
+
+.content-section a {
+    color: #4e443c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.content-section a:hover {
+    text-decoration: underline;
+}
