@@ -465,3 +465,8 @@ footer a:hover::after {
 .content-section a:hover::after {
     transform: scaleX(1);
 }
+
+/* Footer immer nach unten drücken */
+footer {
+    margin-top: auto;
+}
